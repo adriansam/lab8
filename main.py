@@ -78,8 +78,9 @@ import matplotlib.pyplot as plt
 # pr.domowa
 # =================
 # zad1
-# x = [1/x for x in range(20,41)]
-# plt.plot(x)
+# x = np.arange(20,41,1)
+# a = 1/x
+# plt.plot(x, a)
 # plt.xlabel('x')
 # plt.ylabel('1/x')
 # plt.margins(0)
@@ -87,8 +88,9 @@ import matplotlib.pyplot as plt
 # plt.title('Wykresy funkcji f(x) dla x[20,40]')
 # plt.show()
 # zad2
-tab = [1/x for x in range(20,41)]
-plt.plot(tab, "b--", tab, "bo")
+x = np.arange(20,41,1)
+a = 1/x
+plt.plot(x,a, "bo--")
 plt.title("Wykres funckji f(x) dla x[20,40]")
 plt.xlabel("x")
 plt.ylabel("1/x")
